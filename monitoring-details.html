@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Detalhes do monitoramento - Easy Tracking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/monitoring-details.css" />
+</head>
+
+<body>
+  <main class="main-monitoring-details">
+    <header class="header primary-background">
+      <img alt="Easy Tracking Logotipo" src="assets/easy-tracking-white.svg" class="logo" />
+
+      <ul class="navbar">
+        <li><a>Home</a></li>
+        <li><a>Veículos</a></li>
+        <li><a>Motoristas</a></li>
+      </ul>
+
+      <div class="menu">
+        <img alt="Imagem de um sino em branco" src="assets/bell.svg" />
+        <img alt="Foto de perfil do Elon Musk" src="assets/elon-musk.png" />
+        <span>Elon Musk</span>
+        <img alt="Seta para baixo" src="assets/arrow-down.svg" />
+      </div>
+    </header>
+
+    <div class="section-header">
+      <h2>Detalhes do monitoramento</h2>
+      <div>
+        <img alt="Icone de um filtro" src="assets/filter.svg" />
+        <input class="text-field" type="text" placeholder="Buscar por.." required />
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="left">
+        <div class="group">
+          <h3>Fiat Doblô Cargo</h3>
+          <span><b>Placa:</b> BCH0C77</span>
+          <span><b>Capacidade de carga:</b> 620kg (80% utilizado)</span>
+          <span><b>Quilometragem:</b> 62.566km</span>
+          <span><b>Tanque de combustível:</b> 30L/60L (50% abastecido)</span>
+          <span><b>Velocidade máxima controlada:</b> 80km/h</span>
+          <span><b>Assentos disponíveis:</b> 2</span>
+        </div>
+
+        <div class="group">
+          <h3>Evanildo Santos</h3>
+          <span><b>Reputação:</b> 4.5/5</span>
+          <span><b>Status atual:</b> Cansado</span>
+          <span><b>Tempo de condução:</b> 7h</span>
+        </div>
+
+        <div class="group">
+          <h3>GPS</h3>
+          <span><b>Endereço de partida:</b></span>
+          <span><b>Shopping Mueller</b></span>
+          <span>Av. Cândido de Abreu, 127 - Centro Cívico, Curitiba - PR, 80530-000</span>
+          <br />
+          <span><b>Endereço de destino:</b></span>
+          <span><b>Estádio Cícero Pompeu de Toleto</b></span>
+          <span>Praça Roberto Gomes Pedrosa, 1 - Morumbi, São Paulo - SP, 05653-070</span>
+          <br />
+          <span><b>Distância aproximada:</b></span>
+          <span>400km</span>
+          <span>5hmin 27min</span>
+          <br />
+          <span><b>Utilização de combustível:</b></span>
+          <span>120L</span>
+        </div>
+
+        <div class="bottom">
+          <button
+            class="button primary-background primary-border"
+            onclick="nextStep(2)"
+            type="button"
+          >
+            CÂMERA INTERNA
+          </button>
+          <button
+            class="button primary-background primary-border"
+            onclick="nextStep(2)"
+            type="button"
+          >
+            SENSOR DE ASSENTOS
+          </button>
+          <button
+            class="button primary-background primary-border"
+            onclick="nextStep(2)"
+            type="button"
+          >
+            HISTÓRICO DE NAVEGAÇÃO
+          </button>
+        </div>
+      </div>
+      <div class="right">
+        <!-- <img src="assets/google-maps.png" alt="Mapa da região do Centro Cívico"/> -->
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
