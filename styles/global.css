@@ -50,6 +50,7 @@ body {
 
 a {
   color: #2176ae;
+  cursor: pointer;
 }
 
 .text-field {
