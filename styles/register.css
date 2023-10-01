@@ -1,0 +1,47 @@
+#main-register {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+
+  width: 450px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+#step-1 {
+  display: flex;
+}
+
+#step-2 {
+  display: none;
+}
+
+#success-feedback {
+  display: none;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.register-text {
+  text-align: center;
+}
+
+.link-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+}

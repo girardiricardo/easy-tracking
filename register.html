@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cadastre-se - Easy Tracking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/register.css" />
+
+    <script>
+      function nextStep(currentStep) {
+        if (currentStep === 1) {
+          const step1 = document.getElementById('step-1');
+          const step2 = document.getElementById('step-2');
+          const mainRegister = document.getElementById('main-register');
+
+          step1.style.display = 'none';
+          step2.style.display = 'flex';
+          mainRegister.style.padding = '5rem 0';
+        }
+
+        if (currentStep === 2) {
+          const step2 = document.getElementById('step-2');
+          const successFeedback = document.getElementById('success-feedback');
+          const mainRegister = document.getElementById('main-register');
+
+          step2.style.display = 'none';
+          successFeedback.style.display = 'flex';
+          mainRegister.style.padding = '0';
+
+          setTimeout(() => location.href = 'app.html', 5000);
+        }
+      }
+
+      function goBack() {
+        const step1 = document.getElementById('step-1');
+        const step2 = document.getElementById('step-2');
+        const mainRegister = document.getElementById('main-register');
+
+        step1.style.display = 'flex';
+        step2.style.display = 'none';
+        mainRegister.style.padding = '0';
+      }
+    </script>
+  </head>
+
+  <body>
+    <main id="main-register">
+      <img
+        alt="Easy Tracking Logotipo"
+        src="assets/easy.tracking.svg"
+      />
+
+      <div class="box" id="step-1">
+        <p class="register-text primary-color">
+          Passo 1 de 2<br />Informe os dados da sua Empresa
+        </p>
+
+        <input
+          class="text-field"
+          style="margin-top: 1.5rem"
+          type="text"
+          placeholder="Nome da empresa*"
+          required
+        />
+
+        <input
+          class="text-field"
+          style="margin-top: 1.5rem"
+          type="text"
+          placeholder="Razão social*"
+          required
+        />
+
+        <input
+          class="text-field"
+          style="margin-top: 1.5rem"
+          type="text"
+          placeholder="CNPJ*"
+          required
+        />
+
+        <button
+          class="button primary-background primary-border"
+          style="margin-top: 1.5rem"
+          onclick="nextStep(1)"
+          type="button"
+        >
+          PRÓXIMO PASSO
+        </button>
+
+        <button
+          type="button"
+          class="button secondary-background secondary-border"
+          style="margin-top: 1.5rem"
+          onclick="location.href = 'index.html'"
+        >
+          VOLTAR
+        </button>
+      </div>
+
+      <div class="box" id="step-2">
+        <p class="register-text primary-color">
+          Passo 2 de 2<br />Informe seus dados pessoais
+        </p>
+
+        <input
+          class="text-field"
+          style="margin-top: 1.5rem"
+          type="text"
+          placeholder="Nome completo*"
+          required
+        />
+
+        <input
+          class="text-field"
+          style="margin-top: 1.5rem"
+          type="email"
+          placeholder="E-mail*"
+          required
+        />
+
+        <input
+          class="text-field"
+          style="margin-top: 1.5rem"
+          type="text"
+          placeholder="CPF*"
+          required
+        />
+
+        <input
+          class="text-field"
+          style="margin-top: 1.5rem"
+          type="phone"
+          placeholder="Telefone*"
+          required
+        />
+
+        <input
+          class="text-field"
+          style="margin-top: 1.5rem"
+          type="password"
+          placeholder="Senha*"
+          required
+        />
+
+        <input
+          class="text-field"
+          style="margin-top: 1.5rem"
+          type="password"
+          placeholder="Confirme sua senha*"
+          required
+        />
+
+        <p class="link-text" style="margin-top: 1.5rem"
+          >Ao fazer login na plataforma você concorda com os <a href="#">Termos e Condições</a> e <a href="#">Política de Privacidade</a></p
+        >
+
+        <button
+          class="button primary-background primary-border"
+          style="margin-top: 1.5rem"
+          onclick="nextStep(2)"
+          type="button"
+        >
+          CADASTRE-SE
+        </button>
+
+        <button
+          type="button"
+          class="button secondary-background secondary-border"
+          style="margin-top: 1.5rem"
+          onclick="goBack()"
+        >
+          VOLTAR
+        </button>
+      </div>
+
+      <span id="success-feedback" class="primary-color">
+        Seu cadastro foi realizado com sucesso!<br/>
+        Você será redirecionado para a nossa plataforma em 5 segundos.
+      </span>
+    </main>
+  </body>
+</html>
