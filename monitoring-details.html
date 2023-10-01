@@ -8,17 +8,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="./styles/global.css" />
   <link rel="stylesheet" type="text/css" href="./styles/monitoring-details.css" />
+  <script>
+    function openModal(value) {
+      const modal = document.getElementById(value);
+
+      modal.style.display = "block";
+    }
+
+    function closeModal(value) {
+      const modal = document.getElementById(value);
+
+      modal.style.display = 'none';
+    }
+  </script>
 </head>
 
 <body>
+  <div id="modal-camera" class="modal">
+    <div class="modal-content">
+      <h2>Câmera interna</h2>
+      <img src="assets/camera-interna.png" alt="Imagem camera interna"/>
+      <div class="footer">
+        <button
+          class="button secondary-background secondary-border"
+          onclick="closeModal('modal-camera')"
+          type="button"
+        >
+          FECHAR
+        </button>
+        <button
+          class="button primary-background primary-border"
+          onclick="closeModal('modal-camera')"
+          type="button"
+        >
+          TROCAR CÂMERA
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-sensor" class="modal">
+    <div class="modal-content">
+      <h2>Sensor de assentos</h2>
+      <img src="assets/sensor-assentos.png" alt="Imagem sensor assentos"/>
+      <div class="footer">
+        <button
+          class="button primary-background primary-border"
+          onclick="closeModal('modal-sensor')"
+          type="button"
+        >
+          FECHAR
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-historico" class="modal">
+    <div class="modal-content">
+      <h2>Histórico de navegação</h2>
+      <div id="table">
+        <div>
+          <span><b>Evento</b></span>
+          <span><b>Data/hora</b></span>
+        </div>
+        <div>
+          <span>Aceleração acima do limite</span>
+          <span>20/05/2023 ás 15h30</span>
+        </div>
+        <div>
+          <span>Frenagem brusca</span>
+          <span>20/05/2023 ás 15h30</span>
+        </div>
+        <div>
+          <span>Utilização do celular</span>
+          <span>20/05/2023 ás 15h30</span>
+        </div>
+        <div>
+          <span>Fumar cigarro</span>
+          <span>20/05/2023 ás 15h30</span>
+        </div>
+        <div>
+          <span>Aceleração acima do limite</span>
+          <span>20/05/2023 ás 15h30</span>
+        </div>
+        <div>
+          <span>Fumar cigarro</span>
+          <span>20/05/2023 ás 15h30</span>
+        </div>
+      </div>
+      <div class="footer">
+        <button
+          class="button primary-background primary-border"
+          onclick="closeModal('modal-historico')"
+          type="button"
+        >
+          FECHAR
+        </button>
+      </div>
+    </div>
+  </div>
+
   <main class="main-monitoring-details">
     <header class="header primary-background">
       <img alt="Easy Tracking Logotipo" src="assets/easy-tracking-white.svg" class="logo" />
 
       <ul class="navbar">
-        <li><a>Home</a></li>
-        <li><a>Veículos</a></li>
-        <li><a>Motoristas</a></li>
+        <li><a href="app.html">Home</a></li>
+        <li><a href="vehicles.html">Veículos</a></li>
+        <li><a href="drivers.html">Motoristas</a></li>
       </ul>
 
       <div class="menu">
@@ -75,18 +170,32 @@
         </div>
 
         <div class="bottom">
-          <button class="button primary-background primary-border" onclick="nextStep(2)" type="button">
+          <button
+            class="button primary-background primary-border"
+            onclick="openModal('modal-camera')"
+            type="button"
+          >
             CÂMERA INTERNA
           </button>
-          <button class="button primary-background primary-border" onclick="nextStep(2)" type="button">
+          <button
+            class="button primary-background primary-border"
+            onclick="openModal('modal-sensor')"
+            type="button"
+          >
             SENSOR DE ASSENTOS
           </button>
-          <button class="button primary-background primary-border" onclick="nextStep(2)" type="button">
+          <button
+            class="button primary-background primary-border"
+            onclick="openModal('modal-historico')"
+            type="button"
+          >
             HISTÓRICO DE NAVEGAÇÃO
           </button>
         </div>
       </div>
-      <div class="right"></div>
+      <div class="right">
+        <img src="assets/google-maps.png" alt="Mapa da região do Centro Cívico"/>
+      </div>
     </div>
   </main>
 </body>
