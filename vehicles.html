@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Veículos - Easy Tracking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/vehicles.css" />
+  <script>
+    function openModal(value) {
+      const modal = document.getElementById(value);
+
+      modal.style.display = "block";
+    }
+
+    function closeModal(value) {
+      const modal = document.getElementById(value);
+
+      modal.style.display = 'none';
+    }
+  </script>
+</head>
+
+<body>
+  <div id="modal-vehicle" class="modal">
+    <div class="modal-content">
+      <h2>Novo veículo</h2>
+      <input
+        class="text-field"
+        style="margin-top: 1.5rem"
+        type="text"
+        placeholder="Marca*"
+        required
+      />
+      <input
+        class="text-field"
+        style="margin-top: 1.5rem"
+        type="text"
+        placeholder="Modelo*"
+        required
+      />
+      <input
+        class="text-field"
+        style="margin-top: 1.5rem"
+        type="text"
+        placeholder="Cor*"
+        required
+      />
+      <input
+        class="text-field"
+        style="margin-top: 1.5rem"
+        type="text"
+        placeholder="Ano modelo*"
+        required
+      />
+      <input
+        class="text-field"
+        style="margin-top: 1.5rem"
+        type="text"
+        placeholder="Ano fabricação*"
+        required
+      />
+      <input
+        class="text-field"
+        style="margin-top: 1.5rem"
+        type="text"
+        placeholder="Placa*"
+        required
+      />
+      <div class="footer">
+        <button
+          class="button secondary-background secondary-border"
+          onclick="closeModal('modal-vehicle')"
+          type="button"
+        >
+          CANCELAR
+        </button>
+        <button
+          class="button primary-background primary-border"
+          onclick="closeModal('modal-vehicle')"
+          type="button"
+        >
+          SALVAR
+        </button>
+      </div>
+    </div>
+  </div>
+  <main class="main-vehicles">
+    <header class="header primary-background">
+      <img alt="Easy Tracking Logotipo" src="assets/easy-tracking-white.svg" class="logo" />
+
+      <ul class="navbar">
+        <li><a href="app.html">Home</a></li>
+        <li><a href="vehicles.html">Veículos</a></li>
+        <li><a href="drivers.html">Motoristas</a></li>
+      </ul>
+
+      <div class="menu">
+        <img alt="Imagem de um sino em branco" src="assets/bell.svg" />
+        <img alt="Foto de perfil do Elon Musk" src="assets/elon-musk.png" />
+        <span>Elon Musk</span>
+        <img alt="Seta para baixo" src="assets/arrow-down.svg" />
+      </div>
+    </header>
+    <div class="section-header">
+      <h2>Veículos</h2>
+      <div>
+        <input class="text-field" type="text" placeholder="Buscar por.." required />
+        <button
+          class="button primary-background primary-border"
+          onclick="openModal('modal-vehicle')"
+          type="button"
+        >
+          NOVO VEÍCULO
+        </button>
+      </div>
+    </div>
+
+    <div class="section-data">
+      <div>
+        <span>Marca</span>
+        <span>Modelo</span>
+        <span>Cor</span>
+        <span>Ano modelo/Ano fabricação</span>
+        <span>Placa</span>
+        <span>Nível de combustível</span>
+        <span>Status atual</span>
+        <span></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span>Fiat</span>
+        <span>Doblô</span>
+        <span>Branco</span>
+        <span>2020/2020</span>
+        <span>BCH0C77</span>
+        <span>Alto (80%)</span>
+        <span><span class="elipse-orange">a</span> Parado</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
