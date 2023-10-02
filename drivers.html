@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Motoristas - Easy Tracking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/drivers.css" />
+  <script>
+    function openModal(value) {
+      const modal = document.getElementById(value);
+
+      modal.style.display = "block";
+    }
+
+    function closeModal(value) {
+      const modal = document.getElementById(value);
+
+      modal.style.display = 'none';
+    }
+  </script>
+</head>
+
+<body>
+  <div id="modal-drivers" class="modal">
+    <div class="modal-content">
+      <h2>Novo motorista</h2>
+      <input
+        class="text-field"
+        style="margin-top: 1.5rem"
+        type="text"
+        placeholder="Nome completo*"
+        required
+      />
+      <input
+        class="text-field"
+        style="margin-top: 1.5rem"
+        type="text"
+        placeholder="Idade*"
+        required
+      />
+      <input
+        class="text-field"
+        style="margin-top: 1.5rem"
+        type="text"
+        placeholder="CPF*"
+        required
+      />
+      <input
+        class="text-field"
+        style="margin-top: 1.5rem"
+        type="text"
+        placeholder="RG*"
+        required
+      />
+      <input
+        class="text-field"
+        style="margin-top: 1.5rem"
+        type="text"
+        placeholder="Telefone*"
+        required
+      />
+      <input
+        class="text-field"
+        style="margin-top: 1.5rem"
+        type="text"
+        placeholder="Foto*"
+        required
+      />
+      <div class="footer">
+        <button
+          class="button secondary-background secondary-border"
+          onclick="closeModal('modal-drivers')"
+          type="button"
+        >
+          CANCELAR
+        </button>
+        <button
+          class="button primary-background primary-border"
+          onclick="closeModal('modal-drivers')"
+          type="button"
+        >
+          SALVAR
+        </button>
+      </div>
+    </div>
+  </div>
+  <main class="main-drivers">
+    <header class="header primary-background">
+      <img alt="Easy Tracking Logotipo" src="assets/easy-tracking-white.svg" class="logo" />
+
+      <ul class="navbar">
+        <li><a href="app.html">Home</a></li>
+        <li><a href="vehicles.html">Veículos</a></li>
+        <li><a href="drivers.html">Motoristas</a></li>
+      </ul>
+
+      <div class="menu">
+        <img alt="Imagem de um sino em branco" src="assets/bell.svg" />
+        <img alt="Foto de perfil do Elon Musk" src="assets/elon-musk.png" />
+        <span>Elon Musk</span>
+        <img alt="Seta para baixo" src="assets/arrow-down.svg" />
+      </div>
+    </header>
+    <div class="section-header">
+      <h2>Motoristas</h2>
+      <div>
+        <input class="text-field" type="text" placeholder="Buscar por.." required />
+        <button
+          class="button primary-background primary-border"
+          onclick="openModal('modal-drivers')"
+          type="button"
+        >
+          NOVO MOTORISTA
+        </button>
+      </div>
+    </div>
+
+    <div class="section-data">
+      <div>
+        <span></span>
+        <span>Nome completo</span>
+        <span>Idade</span>
+        <span>CPF</span>
+        <span>RG</span>
+        <span>Telefone</span>
+        <span>Reputação</span>
+        <span></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+      <div>
+        <span><img src="assets/elon-musk.png" alt="Elon Musty"/></span>
+        <span>Evanildo Santos</span>
+        <span>56</span>
+        <span>123.456.789-10</span>
+        <span>12.345.678-9</span>
+        <span>+55 (41) 9 9860-1299</span>
+        <span>4.5/5</span>
+        <span><img src="assets/edit.svg" alt="Editar"/></span>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
